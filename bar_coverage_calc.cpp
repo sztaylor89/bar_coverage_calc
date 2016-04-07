@@ -8,8 +8,8 @@
 
 using namespace std;
     //variables
-    int length=0, width=0, flightpath=0;//cm
-    int bartype=0, bar_total_number=0;
+    double length, width, flightpath;//cm
+    double bartype, bar_total_number;
     double single_coverage, array_coverage;//sr
     double single_percent, array_percent;//%
     double x, y;//placeholders for formulas
@@ -61,8 +61,8 @@ int main()
 
     //Outputs answers
     cout << "Single Bar Coverage(sr)= " << single_coverage << endl;
-    cout << "Total Of All Bars Coverage(sr)= " << array_coverage << endl;
     cout << "Single Bar Coverage(%)= " << single_percent << endl;
+    cout << "Total Of All Bars Coverage(sr)= " << array_coverage << endl;
     cout << "Total Of All Bars Coverage(%)= " << array_percent << endl;
     return 0;
 }
