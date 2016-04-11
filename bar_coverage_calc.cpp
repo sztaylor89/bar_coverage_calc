@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <cmath>
+#include<cstdlib>
 
 using namespace std;
     //variables
@@ -43,26 +44,24 @@ int main()
     if(bartype==1){
     length=60;//cm
     width=3;//cm
-    calculations(length,width);
     }
     else if(bartype==2){
     length=120;//cm
     width=6;//cm
-    calculations(length,width);
     }
     else if(bartype==3){
     length=200;//cm
     width=5;//cm
-    calculations(length,width);
     }
     else{
     cout << "ERROR: PLEASE PICK BAR TYPE" << endl;
+    exit(1);
     }
-
+    calculations(length,width);
     //Outputs answers
     cout << "Single Bar Coverage(sr)= " << single_coverage << endl;
     cout << "Single Bar Coverage(%)= " << single_percent << endl;
     cout << "Total Of All Bars Coverage(sr)= " << array_coverage << endl;
     cout << "Total Of All Bars Coverage(%)= " << array_percent << endl;
-    return 0;
+    return(0);
 }
