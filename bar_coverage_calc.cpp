@@ -29,8 +29,8 @@ single_coverage=4*acos(sqrt((numerator/denominator)));
 single_normal=(single_coverage/(4*pi));
 array_coverage=single_coverage*bar_total_number;
 array_normal=(array_coverage/(4*pi));
-//single_percent==(single_coverage/(4*pi))*100;
-//array_percent==array_normal*100;
+single_percent==(single_coverage/(4*pi))*100.0;
+array_percent==array_normal*100.0;
 }
 
 int main()
