@@ -57,7 +57,7 @@ int main()
     }
     else{
     cout << "ERROR: PLEASE PICK BAR TYPE" << endl;
-    exit(1);
+    return(1);
     }
     calculations(length,width);
     //Outputs answers
