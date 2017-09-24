@@ -12,7 +12,7 @@ double length, width, flightpath;//cm
 double bartype, bar_total_number;
 double single_coverage, array_coverage;//sr
 double single_percent, array_percent;//%
-double single_normal, array_normal;//normalized(/4pi) efficiency for calculations
+double single_normal, array_normal;//normalized(sr/4pi) efficiency for calculations
 double x, y;//placeholders for formulas
 const double pi = 3.14159265358979323846;
 
@@ -61,12 +61,12 @@ int main()
     }
     calculations(length,width);
     //Outputs answers
-    cout << "Single Bar Coverage(sr)= " << single_coverage << endl;
+    cout << endl << "Single Bar Coverage(sr)= " << single_coverage << endl;
     cout << "Single Bar Coverage(%)= " << single_percent << endl;
-    cout << "Single Bar Geometric Efficiency= " << single_normal << endl;//coverage in steradians divided by 4pi
-    cout << "Total Of All Bars Coverage(sr)= " << array_coverage << endl;
+    cout << "Single Bar Geometric Efficiency(sr/4pi)= " << single_normal << endl;//coverage in steradians divided by 4pi
+    cout << endl << "Total Of All Bars Coverage(sr)= " << array_coverage << endl;
     cout << "Total Of All Bars Coverage(%)= " << array_percent << endl;
-    cout << "Total of All Bars Geometric Efficiency= " << array_normal << endl;
+    cout << "Total of All Bars Geometric Efficiency(sr/4pi)= " << array_normal << endl;
 
     return(0);
 }
