@@ -35,7 +35,7 @@ void calculations(double L, double W){
 int main()
 {
 
-    cout << "Enter Bar Type(1=small,2=medium,3=large): " << endl;
+    cout << "Enter Bar Type(1=small,2=medium,3=large,4=ANL-Beta): " << endl;
     cin >> bartype;
     cout << "Enter Flightpath Length(cm): " << endl;
     cin >> flightpath;
@@ -54,6 +54,10 @@ int main()
     else if(bartype==3){
     length=200;//cm
     width=5;//cm
+    }
+    else if(bartype==4){
+    length=10;//cm
+    width=4;//cm
     }
     else{
     cout << "ERROR: PLEASE PICK BAR TYPE" << endl;
