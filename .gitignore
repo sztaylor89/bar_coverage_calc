@@ -1,0 +1,10 @@
+
+\.idea/
+
+bar_coverage_calc
+
+build/
+
+*.o
+
+bar_coverage_calc\.cpp~
